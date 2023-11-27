@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata, including character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>My Weather App</title>
+
+    <!-- Shortcut icon for the webpage -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main content of the webpage -->
+    <div id="addcls" class="card">
+        <!-- Search bar for entering city name -->
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+
+        <!-- Weather information display -->
+        <div class="weather">
+            <!-- Weather icon -->
+            <img src="images/worldweather.png" class="weather_icon">
+
+            <!-- Temperature, city name, and additional details -->
+            <h1 class="temp">00°C</h1>
+            <h2 class="city">City Name</h2>
+
+            <!-- Details section with humidity and wind information -->
+            <div class="details">
+                <!-- Humidity information -->
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">00%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <!-- Wind speed information -->
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">00 kmph</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

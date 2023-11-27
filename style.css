@@ -1,0 +1,189 @@
+/* Apply styles to all elements, resetting margin, padding, and setting a default font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styles for the body element */
+body {
+    background: linear-gradient(35deg, #4a1e55, #4233a4cd, #00feba);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Styles for the main card container */
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(150deg, #00feba, #3925bb, #4a1e55);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #525252f0;
+    margin-bottom: 50px;
+}
+
+/* Styles for the search bar */
+.search {
+    width: 400px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styles for the search input */
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc88;
+    color: #555;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 15px;
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+/* Styles for the search button */
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc88;
+    border-radius: 12px;
+    width: 35px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Styles for the search button image */
+.search button img {
+    width: 16px;
+}
+
+/* Styles for the weather icon with animation */
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+    animation: iconFade 3s infinite alternate;
+}
+
+/* Keyframes for the weather icon animation */
+@keyframes iconFade {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Styles for weather information headings */
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: -10px;
+}
+
+/* Styles for the weather details section */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+/* Styles for the weather details columns */
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* Styles for icons within columns */
+.col img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Styles for humidity and wind information */
+.humidity,
+.wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+/* Styles for different weather conditions using classes */
+.clouds {
+    background: linear-gradient(50deg, #42a188, #5b548a);
+    background-image: url(./images/cloud3.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+    background-position: 30% 100%;
+    animation: cloud 5s linear infinite;
+}
+
+/* Keyframes for the cloud animation */
+@keyframes cloud {
+    from {
+        background-color: rgb(85, 120, 237);
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-color: rgb(51, 77, 113);
+        background-position: 30% 100%;
+    }
+}
+
+.rain {
+    /* background: linear-gradient(50deg,#7a706b, #5b548a); */
+    background-image: url(./images/raindrop2.png);
+    animation: rain 0.7s linear infinite;
+}
+
+/* Keyframes for the rain animation */
+@keyframes rain {
+    from {
+        background-color: rgb(50, 108, 243);
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-color: rgb(16, 35, 78);
+        background-position: 30% 100%;
+    }
+}
+
+.clear {
+    background: linear-gradient(170deg, #50c4eb, #f7e30d);
+}
+
+.mist {
+    background: linear-gradient(130deg, #3e545b, #4f2454);
+}
+
+.drizzle {
+    background: linear-gradient(150deg, #3d434f, #d2d1dc);
+}
+
+.haze {
+    background: linear-gradient(150deg, #5199f8, #5a616f, #808183);
+}
